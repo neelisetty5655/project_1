@@ -1,0 +1,120 @@
+.about-container{
+  display: block;
+  position: relative;
+  
+}
+.image{
+  float: right;
+  background-color: white;
+}
+.about-image{
+  margin: 2em 5em;
+  height: 25em;
+  width: 11em;
+}
+.contact{
+  display: block;
+  overflow: hidden;
+  /* padding: 1em; */
+  background: linear-gradient(110deg, #42C2FF 40%, #85F4FF 60%);
+  
+  height: 670px;
+}
+.contact-image{
+  float: left;
+  height: 500px;
+  width: 35%;
+  margin: 6em;
+  margin-left: 6em;
+ 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-text{
+  margin: 2em;   
+}
+.contact-text h1{
+  text-align: center;
+ 
+  padding-top: 10px;
+  padding-left: 20px;
+  
+  font-size: 4em;
+  color: black !important;
+  text-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
+}
+.contact-form{
+  position: absolute;
+  margin: 0;
+  bottom: 0em;
+  right: 0em;
+  padding: 2em 8em 3em 4em;
+  border: 5px double black;
+  border-radius: 2em;
+  margin-right: 30px;
+  margin-bottom: 130px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-1,.contact-2{
+  display: inline-block;
+  /* float: left; */
+}
+.contact-1{
+  padding-right: 8em;
+}
+
+.contact-title{
+  font-size: x-large;
+  margin-top: 2em;
+}
+.contact-detail{
+  font-size: larger;   
+}
+.input{
+  margin: 1.5em;
+  font-size: larger;
+  background: transparent;
+  border-style: none;
+  border-bottom: 3px solid black;
+  font-weight: bold;
+  text-decoration: none;
+  width: 90%;    
+}
+.submit{
+  font-size: x-large;
+  border-style: none;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  margin: 1em 1.5em 0em 1.5em;
+  background-color: black;
+  color: white;
+  border-radius: 1em;
+}
+@media screen and (max-width:1125px) {
+  .about{
+      margin: 7em 0em;
+  }
+  .about-text{
+      padding: 1em 2em;
+      font-size: large;
+  }
+  .contact-image{
+      float: none;
+      width: 80%;
+      overflow: hidden;
+      margin:2em;
+  }
+  .contact-form{
+      position: relative;
+      border: 3px solid black;
+  }
+}
+@media screen and (max-width:750px) {
+  .about{
+     flex-wrap: wrap;
+  }
+  .image{float: left;}
+  .about-text{font-size: medium;}  
+}
+@media screen and (max-width:1330px) {
+  .contact-form{padding: 2em ;}
+}
